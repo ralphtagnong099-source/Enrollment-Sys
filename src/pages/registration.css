@@ -1,0 +1,62 @@
+.reg-page {
+  position: relative;
+  min-height: 100vh;
+  padding: 32px 16px;
+  overflow: hidden;
+  background: #fff;
+}
+.reg-sheet {
+  position: relative;
+  z-index: 1;
+  max-width: 1050px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 40px;
+  box-shadow: 0 8px 30px rgba(30, 107, 255, 0.12);
+}
+.reg-head { display: flex; align-items: center; gap: 16px; padding-bottom: 16px; border-bottom: 3px solid #38c8ff; }
+.reg-logo {
+  width: 54px; height: 54px; border-radius: 50%;
+  background: #38c8ff; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.reg-eyebrow { font-size: 11px; letter-spacing: 3px; color: #1ea3ff; margin: 0 0 4px; }
+.reg-title { font-size: clamp(20px, 4vw, 28px); margin: 0; color: #2c4a7c; }
+
+.reg-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px 20px;
+  padding: 20px 0;
+}
+.reg-info label { display: block; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #6b7280; margin-bottom: 4px; }
+.reg-info div div { font-size: 15px; color: #1f2937; }
+
+.reg-bar { background: #38c8ff; color: #fff; font-weight: 700; letter-spacing: 2px; font-size: 13px; padding: 10px 14px; }
+.reg-wrap { overflow-x: auto; }
+.reg-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 720px; }
+.reg-table th {
+  text-align: left; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #6b7280; padding: 12px 10px; border-bottom: 1px solid #e2e8f0;
+}
+.reg-table td { padding: 12px 10px; border-bottom: 1px solid #f1f5f9; vertical-align: top; color: #374151; }
+.reg-code { display: block; color: #1ea3ff; font-size: 11px; font-weight: 600; }
+.reg-total { text-align: right; padding: 16px 0; color: #6b7280; }
+.reg-total strong { font-size: 24px; color: #1ea3ff; margin-left: 10px; }
+
+.reg-actions { display: flex; justify-content: flex-end; align-items: center; gap: 12px; margin-top: 8px; flex-wrap: wrap; }
+.reg-actions .btn { width: auto; padding: 12px 22px; }
+.btn-ghost { background: none; color: #6b7280; border: none; }
+.btn-ghost:hover { color: #1e7bf0; }
+
+@media (max-width: 700px) {
+  .reg-sheet { padding: 20px 14px; }
+  .reg-info { grid-template-columns: 1fr 1fr; }
+}
+
+@media print {
+  .blob-top, .blob-bottom, .reg-actions { display: none !important; }
+  .reg-page { padding: 0; }
+  .reg-sheet { box-shadow: none; max-width: 100%; padding: 0; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}

@@ -1,0 +1,82 @@
+.en-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  overflow: hidden;
+  background: #fff;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+.en-blob-top {
+  position: absolute;
+  top: -14vw; left: -12vw;
+  width: clamp(240px, 32vw, 440px);
+  height: clamp(240px, 30vw, 400px);
+  background: linear-gradient(135deg, #3db9ff, #33ffff);
+  border-radius: 20% 80% 70% 30% / 30% 30% 70% 70%;
+}
+.en-blob-bottom {
+  position: absolute;
+  bottom: -14vw; right: -10vw;
+  width: clamp(280px, 48vw, 680px);
+  height: clamp(200px, 28vw, 400px);
+  background: linear-gradient(180deg, #e6ffff, #ccffff);
+  border-radius: 70% 30% 0 0 / 60% 70% 0 0;
+}
+.en-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 32px 28px;
+}
+.en-eyebrow { text-align: center; font-size: 11px; letter-spacing: 3px; color: #8ec9ea; margin: 0 0 8px; }
+.en-title { text-align: center; font-size: clamp(26px, 5vw, 34px); font-weight: 700; color: #38c8ff; margin: 0 0 6px; letter-spacing: -0.5px; }
+.en-sub { text-align: center; font-size: 14px; color: #8aa4b8; margin: 0 0 28px; }
+
+.en-label { display: block; font-size: 13px; color: #8aa4b8; margin-bottom: 2px; }
+.en-req { color: #ef4444; }
+.en-input, .en-select {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #cfe3f0;
+  background: transparent;
+  padding: 10px 2px;
+  font-size: 16px;
+  color: #1f2937;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 0;
+}
+.en-input:focus, .en-select:focus { border-bottom-color: #2271e3; }
+
+.en-grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 16px; }
+.en-grid2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 16px; }
+.en-note { font-size: 12px; color: #ef6b7b; margin: -8px 0 16px; }
+.en-error { border-left: 3px solid #ef4444; background: #fef2f2; color: #b91c1c; font-size: 13px; padding: 10px 12px; margin-bottom: 16px; }
+
+.en-btn {
+  width: 100%;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: #3fbbff;
+  cursor: pointer;
+}
+.en-btn:hover { background: #1ea3ff; }
+
+@media (max-width: 520px) {
+  .en-grid3, .en-grid2 { grid-template-columns: 1fr; }
+  .en-card { padding: 24px 18px; }
+}

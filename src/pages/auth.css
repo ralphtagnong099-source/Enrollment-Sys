@@ -1,0 +1,31 @@
+.auth-card.subjects-card {
+  max-width: 1120px;
+  padding: 40px 40px 32px;
+  border-radius: 20px;
+  box-shadow: none;
+}
+.subjects-card .subj-meta { color: #8ec9ea; letter-spacing: 3px; }
+.subjects-card .auth-title {
+  color: #38c8ff;
+  font-size: clamp(26px, 4vw, 34px);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+.subjects-card .auth-sub { color: #8aa4b8; margin-bottom: 32px; }
+
+.subj-table th { color: #8ec9ea; font-size: 10px; letter-spacing: 2.5px; border-bottom: none; padding-bottom: 14px; }
+.subj-table td { padding: 16px 8px; border-bottom: none; }
+.subj-table tbody tr:hover { background: #f4faff; }
+.subj-table .row-selected { background: #eaf6ff; }
+.subj-table .muted { color: #9bb3c4; }
+.subj-code { color: #38c8ff; font-size: 11px; }
+.subj-name { color: #475f7b; font-size: 14px; }
+.sched-day { color: #475f7b; font-weight: 500; }
+.sched-detail { color: #9bb3c4; }
+
+.subj-footer { border-top: none; justify-content: flex-end; gap: 32px; padding-top: 8px; }
+.total-box { text-align: right; }
+.total-label { color: #8ec9ea; font-size: 10px; letter-spacing: 2.5px; }
+.total-num { color: #38c8ff; font-size: 30px; }
+.subj-btn { background: #38c8ff; border-radius: 8px; }
+.subj-btn:hover { background: #1ea3ff; }
